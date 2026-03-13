@@ -14,11 +14,11 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-import sys
-import os
-sys.path.insert(0, os.path.dirname(__file__))
-from classifier import generate_advocacy_content
-from db import ComprehensivePlan, RawAgendaItem, WatchlistEntry, get_session, init_db
+#import sys
+#import os
+#sys.path.insert(0, os.path.dirname(__file__))
+#from classifier import generate_advocacy_content
+#from db import ComprehensivePlan, RawAgendaItem, WatchlistEntry, get_session, init_db
 
 app = FastAPI(title="Maine YIMBY Housing Watch API", version="1.0")
 
