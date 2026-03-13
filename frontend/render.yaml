@@ -1,0 +1,18 @@
+```yaml
+services:
+- type: web
+name: maine-housing-api
+env: python
+buildCommand: pip install -r requirements.txt
+startCommand: gunicorn api:app
+envVars:
+- key: PYTHON_VERSION
+value: 3.11.0
+- key: DATABASE_URL
+sync: false
+- type: web
+name: maine-housing-frontend
+env: static
+buildCommand: echo "No build needed"
+staticPublishPath: ./frontend
+`
