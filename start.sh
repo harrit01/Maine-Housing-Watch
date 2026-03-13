@@ -1,0 +1,4 @@
+bash
+#!/bin/bash
+export PYTHONPATH="${PYTHONPATH}:/opt/render/project/src"
+python3 -m uvicorn api:app --host 0.0.0.0 --port 10000
