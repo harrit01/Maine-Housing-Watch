@@ -1,0 +1,54 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maine Housing Watch - Upcoming Planning Board Meetings</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="container">
+<h1>🏘️ Maine Housing Watch</h1>
+<p class="tagline">Track housing proposals across Maine's 492 municipalities</p>
+<nav>
+<a href="index.html" class="active">Upcoming Meetings</a>
+<a href="towns.html">Browse Towns</a>
+<a href="about.html">About</a>
+</nav>
+</div>
+</header>
+<main class="container">
+<section class="hero">
+<h2>Upcoming Planning Board Meetings</h2>
+<p>Housing proposals are happening across Maine right now. Here's where you can make your voice heard.</p>
+</section>
+<section class="filter-bar">
+<label>
+<input type="checkbox" id="housingOnly" checked>
+<span>Housing-related only</span>
+</label>
+<select id="countyFilter">
+<option value="">All Counties</option>
+<option value="Cumberland">Cumberland</option>
+<option value="York">York</option>
+<option value="Penobscot">Penobscot</option>
+<option value="Kennebec">Kennebec</option>
+<option value="Androscoggin">Androscoggin</option>
+</select>
+</section>
+<section id="meetings-list" class="meetings-grid">
+<div class="loading">Loading upcoming meetings...</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<p>Built by Maine YIMBYs | <a href="https://github.com/harrit01/Maine-Housing-Watch" target="_blank">GitHub</a></p>
+<p>Data updated hourly from municipal websites</p>
+</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
+`
