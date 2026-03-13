@@ -1,6 +1,6 @@
 ```javascript
 // API Configuration
-const API_BASE_URL = 'https://maine-housing-watch.onrender.com'; // We'll update this after deployment
+const API_BASE_URL = 'https://maine-housing-api.onrender.com'; // We'll update this after deployment
 // Fetch and display meetings
 async function loadMeetings() {
 const meetingsList = document.getElementById('meetings-list');
